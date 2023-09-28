@@ -1,0 +1,1178 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix shacl: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22> rdfs:member <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AfvalficheShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AnalyserapportShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestmateriaalShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AttestShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#InventarisSummaryShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#TaalstringShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#URiShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#GebouweenheidShape> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AfvalficheShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Afvalfiche> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AnalyserapportShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AnalyserapportShape/0d913ac7222b4a9b73152f30451f727c90294f39>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AnalyserapportShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AnalyserapportShape/5ea3e6deebe239c60a44df6083bb214422fb8cca>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AnalyserapportShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635>;
+  shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Analyserapport> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AnalyserapportShape/0d913ac7222b4a9b73152f30451f727c90294f39> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Analyserapport%3Aid";
+  shacl:class rdfs:Resource;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van id moet van het type <http://www.w3.org/2000/01/rdf-schema#Resource> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AnalyserapportShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Analyserapport%3Aid";
+  shacl:name "id"@nl;
+  shacl:nodekind "sh:BlankNodeOrIRI";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor id is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AnalyserapportShape/5ea3e6deebe239c60a44df6083bb214422fb8cca> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Analyserapport%3Aid";
+  shacl:maxCount 1;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor id"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AnalyserapportShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Analyserapport%3Aid";
+  shacl:minCount 1;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor id"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/009e0758ca1e8f62f8da8db33a1f4f3927d0cc88>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/2b521855d5efb225a70683634c94270b3f3dcbaf>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/2d2789778b08ee82f0700569a29ecb99ff412e0f>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/3ab70f0160b3adc415c1d468a40cb0443c75ef30>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/97d7a9c6efa99a7cadbc1c3cfe0968deb6b5124a>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/1a6413a17776d8c2a612e62a84320768ccfd0595>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/1e21d994e04b41a43d51dbc9a00b3557c09708b9>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/c61796a89c9f544affac4b67dcaa8f657b492909>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/fd82d309fca5556f017986f9318746a696a19cf5>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/11378e9675170ad11c8b7fd87d11583b3c2c38f4>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/58e7211d2a166318f58a82b96078703ae2710714>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/cc62b122da6ebda82a12714f2747334b313cd64b>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/e11d1b219acac343caf284ab1e7dd9c8420c5ccb>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/5f87e35c2ad45b689d97da99d5570bbef03a37df>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/a52533d4da83724fbccdee8ad21c945e540061ba>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/b162802e7c42b0b357facee019307b123cfad75d>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/b26454354516a772356f493c3e9f11f34f72fd42>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/0fac55cf525ff04d65c07b42205fb4fe70a2cce7>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/df0bb9a248571d6556734641fc703f92a6dc6983>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/5426a4699ab5f6cdd944f76a50ce71a6609a35ee>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/7bdb302415d43ec1d186e50b3e0fa1bea4bbfeb7>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/15fd91a38772b1ad7b31a18d5af83e1f30c22938>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/cdecf9d1178d457f5ac068d390167a02fffcdc58>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/3fa4e55e29ff200956615807ed16daa0d717bfc3>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/42651f9606d17913f7397c95a3473fda1d233c41>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/7a9687402d00551aa0092617d5c119f78cc9efb0>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/e336ee8326ae7f33a7d27409aaef31defd8efa55>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/1915fbbca99ccc5edd939e2d1af5209e7fbd6979>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/65453f72aa4f94cadd8438c9e4212094bd14108a>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/6ba162e23c407a877608567d2b9716dfac9fd89f>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/c24ca35ad68a2b91e64f1c0252c56dd896fe56dc>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/0f7e23bab56af4fc892ea957cbbb1f22560daee7>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/814714755d0fdf3dbd4f97b3d1ccfec8044ab210>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/0d913ac7222b4a9b73152f30451f727c90294f39>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/5ea3e6deebe239c60a44df6083bb214422fb8cca>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/1f3305b733b9a22cd5ebb5c7b9c02d5e622c47b9>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/21e0d345c6c1d1cd03d768d4fe832b054eeaf9d8>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/918b314b0946ef6a71382bb1ecd6a234d7d7869c>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/b3563be21db32050a2f3ce26f46190436fc11a8f>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/b90d6392dc65371420c95fcb8e4dfb27ee3d8fec>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/09ed995683a26095de4577d13e597160f260ecb2>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/1bab1bb4af028fef0775daa8246b62cbb09cdcd1>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/904e159deeedfb8748ebf3dce9a6caf0ef476b9e>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/f3863ce5468352d4291842a66dd4db610576ccc5>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/fc134bbb026523e6afde205e88de56ae056be099>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/194237b5435473054f12ed0ad645256862d4d17c>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/46e12e08b7642ac8dfe8be6d0aa286fb497eab52>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/d80d38aac1a69c41c98af81710828dfdd0a66c2c>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/ec2a27b07c960e909a1bcaa63106edcb5a133941>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/16c562fda0aa39e585832a2c9088c7095107a1d9>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/c824c09d745d1d5fab1af12af7f6ab5d7acba122>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/d829b8dec3d144def615907a355a392139ddb266>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/d9057fa5e1ed751fc0ae926ee76bcc8869e75f57>;
+  shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/009e0758ca1e8f62f8da8db33a1f4f3927d0cc88> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aaanleiding";
+  shacl:minCount 1;
+  shacl:name "aanleiding"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aanleiding>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor aanleiding"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/09ed995683a26095de4577d13e597160f260ecb2> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aresultaat";
+  shacl:datatype rdf:langString;
+  shacl:name "resultaat"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#resultaat>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van resultaat moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/0d913ac7222b4a9b73152f30451f727c90294f39> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aid";
+  shacl:class rdfs:Resource;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van id moet van het type <http://www.w3.org/2000/01/rdf-schema#Resource> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/0f7e23bab56af4fc892ea957cbbb1f22560daee7> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Agemeenschappelijk%20deel";
+  shacl:name "gemeenschappelijk deel"@nl;
+  shacl:nodekind "sh:BlankNodeOrIRI";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkDeel>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor gemeenschappelijk deel is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/0fac55cf525ff04d65c07b42205fb4fe70a2cce7> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aanalyse%20rapport";
+  shacl:name "analyse rapport"@nl;
+  shacl:nodekind "sh:BlankNodeOrIRI";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#analyserapport>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor analyse rapport is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/11378e9675170ad11c8b7fd87d11583b3c2c38f4> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aaantal%20beperkingen";
+  shacl:datatype xsd:integer;
+  shacl:name "aantal beperkingen"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalBeperkingen>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van aantal beperkingen moet van het type <http://www.w3.org/2001/XMLSchema#integer> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/15fd91a38772b1ad7b31a18d5af83e1f30c22938> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aattest";
+  shacl:name "attest"@nl;
+  shacl:nodekind "sh:BlankNodeOrIRI";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attest>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor attest is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/16c562fda0aa39e585832a2c9088c7095107a1d9> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Avan%20toepassing%20op%20gemeenschappelijk%20deel";
+  shacl:minCount 1;
+  shacl:name "van toepassing op gemeenschappelijk deel"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#vanToepassingOpGemeenschappelijkDeel>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor van toepassing op gemeenschappelijk deel"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/1915fbbca99ccc5edd939e2d1af5209e7fbd6979> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Ageldig%20tot";
+  shacl:datatype xsd:date;
+  shacl:name "geldig tot"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geldigTot>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van geldig tot moet van het type <http://www.w3.org/2001/XMLSchema#date> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/194237b5435473054f12ed0ad645256862d4d17c> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Auitgegeven%20op";
+  shacl:maxCount 1;
+  shacl:name "uitgegeven op"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#uitgegevenOp>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor uitgegeven op"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/1a6413a17776d8c2a612e62a84320768ccfd0595> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aaantal%20asbest%20materialen";
+  shacl:datatype xsd:integer;
+  shacl:name "aantal asbest materialen"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalAsbestMaterialen>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van aantal asbest materialen moet van het type <http://www.w3.org/2001/XMLSchema#integer> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/1bab1bb4af028fef0775daa8246b62cbb09cdcd1> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aresultaat";
+  shacl:minCount 1;
+  shacl:name "resultaat"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#resultaat>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor resultaat"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aid";
+  shacl:name "id"@nl;
+  shacl:nodekind "sh:BlankNodeOrIRI";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor id is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/1e21d994e04b41a43d51dbc9a00b3557c09708b9> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aaantal%20asbest%20materialen";
+  shacl:minCount 1;
+  shacl:name "aantal asbest materialen"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalAsbestMaterialen>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor aantal asbest materialen"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/1f3305b733b9a22cd5ebb5c7b9c02d5e622c47b9> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Alocatie%20beschrijving";
+  shacl:name "locatie beschrijving"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#locatiebeschrijving>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor locatie beschrijving is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/21e0d345c6c1d1cd03d768d4fe832b054eeaf9d8> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Alocatie%20beschrijving";
+  shacl:datatype rdf:langString;
+  shacl:name "locatie beschrijving"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#locatiebeschrijving>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van locatie beschrijving moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/2b521855d5efb225a70683634c94270b3f3dcbaf> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aaanleiding";
+  shacl:name "aanleiding"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aanleiding>;
+  shacl:uniqueLang true;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Slechts 1 waarde voor elke taal toegelaten voor aanleiding"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/2d2789778b08ee82f0700569a29ecb99ff412e0f> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aaanleiding";
+  shacl:name "aanleiding"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aanleiding>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor aanleiding is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/3ab70f0160b3adc415c1d468a40cb0443c75ef30> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aaanleiding";
+  shacl:maxCount 1;
+  shacl:name "aanleiding"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aanleiding>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor aanleiding"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/3fa4e55e29ff200956615807ed16daa0d717bfc3> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aattest%20nummer";
+  shacl:name "attest nummer"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attestNummer>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor attest nummer is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/42651f9606d17913f7397c95a3473fda1d233c41> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aattest%20nummer";
+  shacl:maxCount 1;
+  shacl:name "attest nummer"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attestNummer>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor attest nummer"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/46e12e08b7642ac8dfe8be6d0aa286fb497eab52> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Auitgegeven%20op";
+  shacl:datatype xsd:date;
+  shacl:name "uitgegeven op"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#uitgegevenOp>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van uitgegeven op moet van het type <http://www.w3.org/2001/XMLSchema#date> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/5426a4699ab5f6cdd944f76a50ce71a6609a35ee> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aasbestmateriaal";
+  shacl:name "asbestmateriaal"@nl;
+  shacl:nodekind "sh:BlankNodeOrIRI";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor asbestmateriaal is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/58e7211d2a166318f58a82b96078703ae2710714> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aaantal%20beperkingen";
+  shacl:name "aantal beperkingen"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalBeperkingen>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor aantal beperkingen is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/5ea3e6deebe239c60a44df6083bb214422fb8cca> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aid";
+  shacl:maxCount 1;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor id"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/5f87e35c2ad45b689d97da99d5570bbef03a37df> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aaantal%20uitsluitingen";
+  shacl:maxCount 1;
+  shacl:name "aantal uitsluitingen"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalUitsluitingen>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor aantal uitsluitingen"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/65453f72aa4f94cadd8438c9e4212094bd14108a> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Ageldig%20tot";
+  shacl:name "geldig tot"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geldigTot>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor geldig tot is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/6ba162e23c407a877608567d2b9716dfac9fd89f> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Ageldig%20tot";
+  shacl:maxCount 1;
+  shacl:name "geldig tot"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geldigTot>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor geldig tot"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/7a9687402d00551aa0092617d5c119f78cc9efb0> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aattest%20nummer";
+  shacl:datatype xsd:string;
+  shacl:name "attest nummer"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attestNummer>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van attest nummer moet van het type <http://www.w3.org/2001/XMLSchema#string> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/7bdb302415d43ec1d186e50b3e0fa1bea4bbfeb7> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aasbestmateriaal";
+  shacl:class <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestmateriaal>;
+  shacl:name "asbestmateriaal"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van asbestmateriaal moet van het type <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestmateriaal> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/814714755d0fdf3dbd4f97b3d1ccfec8044ab210> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Agemeenschappelijk%20deel";
+  shacl:class <https://data.vlaanderen.be/ns/gebouw#Gebouweenheid>;
+  shacl:name "gemeenschappelijk deel"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkDeel>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van gemeenschappelijk deel moet van het type <https://data.vlaanderen.be/ns/gebouw#Gebouweenheid> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/904e159deeedfb8748ebf3dce9a6caf0ef476b9e> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aresultaat";
+  shacl:name "resultaat"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#resultaat>;
+  shacl:uniqueLang true;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Slechts 1 waarde voor elke taal toegelaten voor resultaat"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/918b314b0946ef6a71382bb1ecd6a234d7d7869c> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Alocatie%20beschrijving";
+  shacl:minCount 1;
+  shacl:name "locatie beschrijving"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#locatiebeschrijving>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor locatie beschrijving"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/97d7a9c6efa99a7cadbc1c3cfe0968deb6b5124a> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aaanleiding";
+  shacl:datatype rdf:langString;
+  shacl:name "aanleiding"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aanleiding>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van aanleiding moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/a52533d4da83724fbccdee8ad21c945e540061ba> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aaantal%20uitsluitingen";
+  shacl:name "aantal uitsluitingen"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalUitsluitingen>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor aantal uitsluitingen is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/b162802e7c42b0b357facee019307b123cfad75d> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aaantal%20uitsluitingen";
+  shacl:datatype xsd:integer;
+  shacl:name "aantal uitsluitingen"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalUitsluitingen>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van aantal uitsluitingen moet van het type <http://www.w3.org/2001/XMLSchema#integer> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/b26454354516a772356f493c3e9f11f34f72fd42> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aaantal%20uitsluitingen";
+  shacl:minCount 1;
+  shacl:name "aantal uitsluitingen"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalUitsluitingen>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor aantal uitsluitingen"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/b3563be21db32050a2f3ce26f46190436fc11a8f> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Alocatie%20beschrijving";
+  shacl:maxCount 1;
+  shacl:name "locatie beschrijving"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#locatiebeschrijving>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor locatie beschrijving"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/b90d6392dc65371420c95fcb8e4dfb27ee3d8fec> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Alocatie%20beschrijving";
+  shacl:name "locatie beschrijving"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#locatiebeschrijving>;
+  shacl:uniqueLang true;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Slechts 1 waarde voor elke taal toegelaten voor locatie beschrijving"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/c24ca35ad68a2b91e64f1c0252c56dd896fe56dc> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Ageldig%20tot";
+  shacl:minCount 1;
+  shacl:name "geldig tot"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geldigTot>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor geldig tot"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/c61796a89c9f544affac4b67dcaa8f657b492909> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aaantal%20asbest%20materialen";
+  shacl:maxCount 1;
+  shacl:name "aantal asbest materialen"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalAsbestMaterialen>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor aantal asbest materialen"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/c824c09d745d1d5fab1af12af7f6ab5d7acba122> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Avan%20toepassing%20op%20gemeenschappelijk%20deel";
+  shacl:maxCount 1;
+  shacl:name "van toepassing op gemeenschappelijk deel"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#vanToepassingOpGemeenschappelijkDeel>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor van toepassing op gemeenschappelijk deel"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/cc62b122da6ebda82a12714f2747334b313cd64b> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aaantal%20beperkingen";
+  shacl:minCount 1;
+  shacl:name "aantal beperkingen"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalBeperkingen>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor aantal beperkingen"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/cdecf9d1178d457f5ac068d390167a02fffcdc58> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aattest";
+  shacl:class <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest>;
+  shacl:name "attest"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attest>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van attest moet van het type <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/d80d38aac1a69c41c98af81710828dfdd0a66c2c> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Auitgegeven%20op";
+  shacl:name "uitgegeven op"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#uitgegevenOp>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor uitgegeven op is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/d829b8dec3d144def615907a355a392139ddb266> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Avan%20toepassing%20op%20gemeenschappelijk%20deel";
+  shacl:name "van toepassing op gemeenschappelijk deel"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#vanToepassingOpGemeenschappelijkDeel>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor van toepassing op gemeenschappelijk deel is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/d9057fa5e1ed751fc0ae926ee76bcc8869e75f57> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Avan%20toepassing%20op%20gemeenschappelijk%20deel";
+  shacl:datatype xsd:boolean;
+  shacl:name "van toepassing op gemeenschappelijk deel"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#vanToepassingOpGemeenschappelijkDeel>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van van toepassing op gemeenschappelijk deel moet van het type <http://www.w3.org/2001/XMLSchema#boolean> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/df0bb9a248571d6556734641fc703f92a6dc6983> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aanalyse%20rapport";
+  shacl:class <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Analyserapport>;
+  shacl:name "analyse rapport"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#analyserapport>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van analyse rapport moet van het type <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Analyserapport> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aid";
+  shacl:minCount 1;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor id"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/e11d1b219acac343caf284ab1e7dd9c8420c5ccb> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aaantal%20beperkingen";
+  shacl:maxCount 1;
+  shacl:name "aantal beperkingen"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalBeperkingen>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor aantal beperkingen"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/e336ee8326ae7f33a7d27409aaef31defd8efa55> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aattest%20nummer";
+  shacl:minCount 1;
+  shacl:name "attest nummer"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attestNummer>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor attest nummer"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/ec2a27b07c960e909a1bcaa63106edcb5a133941> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Auitgegeven%20op";
+  shacl:minCount 1;
+  shacl:name "uitgegeven op"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#uitgegevenOp>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor uitgegeven op"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/f3863ce5468352d4291842a66dd4db610576ccc5> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aresultaat";
+  shacl:name "resultaat"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#resultaat>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor resultaat is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/fc134bbb026523e6afde205e88de56ae056be099> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aresultaat";
+  shacl:maxCount 1;
+  shacl:name "resultaat"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#resultaat>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor resultaat"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestinventarisShape/fd82d309fca5556f017986f9318746a696a19cf5> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestinventaris%3Aaantal%20asbest%20materialen";
+  shacl:name "aantal asbest materialen"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalAsbestMaterialen>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor aantal asbest materialen is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestmateriaalShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestmateriaalShape/0d913ac7222b4a9b73152f30451f727c90294f39>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestmateriaalShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestmateriaalShape/5ea3e6deebe239c60a44df6083bb214422fb8cca>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestmateriaalShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635>;
+  shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestmateriaal> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestmateriaalShape/0d913ac7222b4a9b73152f30451f727c90294f39> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestmateriaal%3Aid";
+  shacl:class rdfs:Resource;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van id moet van het type <http://www.w3.org/2000/01/rdf-schema#Resource> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestmateriaalShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestmateriaal%3Aid";
+  shacl:name "id"@nl;
+  shacl:nodekind "sh:BlankNodeOrIRI";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor id is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestmateriaalShape/5ea3e6deebe239c60a44df6083bb214422fb8cca> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestmateriaal%3Aid";
+  shacl:maxCount 1;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor id"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AsbestmateriaalShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Asbestmateriaal%3Aid";
+  shacl:minCount 1;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor id"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AttestShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AttestShape/0d913ac7222b4a9b73152f30451f727c90294f39>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AttestShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AttestShape/5ea3e6deebe239c60a44df6083bb214422fb8cca>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AttestShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635>;
+  shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AttestShape/0d913ac7222b4a9b73152f30451f727c90294f39> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Attest%3Aid";
+  shacl:class rdfs:Resource;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van id moet van het type <http://www.w3.org/2000/01/rdf-schema#Resource> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AttestShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Attest%3Aid";
+  shacl:name "id"@nl;
+  shacl:nodekind "sh:BlankNodeOrIRI";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor id is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AttestShape/5ea3e6deebe239c60a44df6083bb214422fb8cca> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Attest%3Aid";
+  shacl:maxCount 1;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor id"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#AttestShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Attest%3Aid";
+  shacl:minCount 1;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor id"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/2d1f86dcb2bda1f31dd247ec8e8da25afcd0aec4>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/391717ad86d92d8343b46fa55118f9abf17a6b5f>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/4645f8b165ee9af0294c89989434eb0f9ca083b5>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/4ea195d5602802668f232d990c0f641a53c621d7>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/e6880a355c450d4dae120323d365b51dd000c6eb>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/12ca3ff35c562b6cccb7ee8af491346e685ab2de>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/4e209aed36dc594331ac72c7de41915594ab851f>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/b4e2455858e877db5b78b9b80a63704efa45bcb2>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/f433bebe359eeee11502f622fb2bb6fa47637127>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/f5b0353cc97fcc7d85068bc8c115979cdb0edd71>;
+  shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Bronfiche> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/12ca3ff35c562b6cccb7ee8af491346e685ab2de> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Bronfiche%3Arisicobeoordeling";
+  shacl:datatype rdf:langString;
+  shacl:name "risicobeoordeling"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#risicobeoordeling>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van risicobeoordeling moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/2d1f86dcb2bda1f31dd247ec8e8da25afcd0aec4> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Bronfiche%3Amijlpaal";
+  shacl:minCount 1;
+  shacl:name "mijlpaal"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#mijlpaal>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor mijlpaal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/391717ad86d92d8343b46fa55118f9abf17a6b5f> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Bronfiche%3Amijlpaal";
+  shacl:name "mijlpaal"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#mijlpaal>;
+  shacl:uniqueLang true;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Slechts 1 waarde voor elke taal toegelaten voor mijlpaal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/4645f8b165ee9af0294c89989434eb0f9ca083b5> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Bronfiche%3Amijlpaal";
+  shacl:datatype rdf:langString;
+  shacl:name "mijlpaal"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#mijlpaal>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van mijlpaal moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/4e209aed36dc594331ac72c7de41915594ab851f> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Bronfiche%3Arisicobeoordeling";
+  shacl:name "risicobeoordeling"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#risicobeoordeling>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor risicobeoordeling is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/4ea195d5602802668f232d990c0f641a53c621d7> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Bronfiche%3Amijlpaal";
+  shacl:name "mijlpaal"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#mijlpaal>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor mijlpaal is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/b4e2455858e877db5b78b9b80a63704efa45bcb2> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Bronfiche%3Arisicobeoordeling";
+  shacl:minCount 1;
+  shacl:name "risicobeoordeling"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#risicobeoordeling>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor risicobeoordeling"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/e6880a355c450d4dae120323d365b51dd000c6eb> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Bronfiche%3Amijlpaal";
+  shacl:maxCount 1;
+  shacl:name "mijlpaal"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#mijlpaal>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor mijlpaal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/f433bebe359eeee11502f622fb2bb6fa47637127> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Bronfiche%3Arisicobeoordeling";
+  shacl:maxCount 1;
+  shacl:name "risicobeoordeling"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#risicobeoordeling>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor risicobeoordeling"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#BronficheShape/f5b0353cc97fcc7d85068bc8c115979cdb0edd71> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Bronfiche%3Arisicobeoordeling";
+  shacl:name "risicobeoordeling"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#risicobeoordeling>;
+  shacl:uniqueLang true;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Slechts 1 waarde voor elke taal toegelaten voor risicobeoordeling"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/0d0ac6abf6708f58883ae95a1056f869d50ebe14>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/157d9c95696736945e500b8445ad2f1b9b23e34d>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/22679101b389fabcd4bb080d82ccde7fd0df6309>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/326cac861989b7c233d5c9718c324dca55cb90ad>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/7123d070360c899dd9b6eef264d29cc1b3e6685d>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/3437503acc9fb35d70210cb5da7b331e7fb339b4>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/5426a4699ab5f6cdd944f76a50ce71a6609a35ee>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/5aaabc572ce4542a6ba5f6b601ea2dcdff1afdb8>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/7bdb302415d43ec1d186e50b3e0fa1bea4bbfeb7>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/e992cba92f1ede6f92709a17a0ad84ba94181f8c>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/1890359a3ed68a9ce63c078d25d2345f10af8033>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/2e2b5662ed9dd624f78fdc45bc2238bcd71af713>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/783e8325bf52daf77e928fbfb9b16e74ba44c01e>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/7bc694106970f228bf0c767973165da759679751>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/d359a212f636aa02770ad6806f5de7db96dd9c88>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/2217949528fdd3dba0d2e3fc7e6fb662caa193f5>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/da05d674f29a225a7115411e9f7ca442a25f2c88>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/5c7f9de4c5eeba338abacba76ea764e63ebfb3ff>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/8261aad1be82f5b51fd856785d69dc71fd2b429c>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/98c28b535c0667440bd5c3a2520ea4aafb6fabcd>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/c6201b9f32d28a05b3f9ab46ab6232fbd464ee90>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/de0d4bc996c7e1934e5eca40b874e2129cf376c2>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/1b39d4aa188ba55cef744e0bd12936f17df99a3d>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/73f464ad9aed9d02ec67d14787e6fd7aad5a6fc9>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/7466605c92be46c1d94c6aa240e33c4f011c9843>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/7c0e9ad0405a4be688016bd09ceb4f5ad26727ed>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/03353303cbed5eae4b89288bbd4c7025f2f66ea6>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/943510c5994121edfbba7478ac9c91f5a0d88a2c>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/acba7ef72d759e0bd69ac32f6bf6aac7a7da58f1>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/eecf340d501f2732e41064e9593291dcec708e96>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/fc9c37fcd97d93806e985348b9c4d41f6b521037>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/0d913ac7222b4a9b73152f30451f727c90294f39>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/5ea3e6deebe239c60a44df6083bb214422fb8cca>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/2271db6bbf4214784a150cb533d31be54e3f2603>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/78c67d4da1c4ced296f45ccfad3bf3266c0f8e12>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/93e4966d49d10ea38e7526aeb36cf97742d12050>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/96e6092cca1b9e0acfa7a89f5e925534316dd186>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/a076e0631fdad9c1a638911b38fbf91881dbac30>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/0fd2b1461e77d4567f13da18cf314626f890ed4a>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/43063d4f97ea2eb32fb0fa6034a8a0897a914397>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/4eb10daa860ffb64ba889c05f63d4902a9565cd9>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/53cfa7051a61ca3da882f4fbe1fc89767a7d1e16>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/7a70b71d777d10297c1245a3fcad13f8d96cc3a7>;
+  shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/03353303cbed5eae4b89288bbd4c7025f2f66ea6> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Agebondenheid";
+  shacl:minCount 1;
+  shacl:name "gebondenheid"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gebondenheid>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor gebondenheid"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/0d0ac6abf6708f58883ae95a1056f869d50ebe14> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aactie";
+  shacl:maxCount 1;
+  shacl:name "actie"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#actie>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor actie"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/0d913ac7222b4a9b73152f30451f727c90294f39> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aid";
+  shacl:class rdfs:Resource;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van id moet van het type <http://www.w3.org/2000/01/rdf-schema#Resource> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Abeschrijving";
+  shacl:datatype rdf:langString;
+  shacl:name "beschrijving"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#beschrijving>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van beschrijving moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/0fd2b1461e77d4567f13da18cf314626f890ed4a> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aprimaire%20drager";
+  shacl:datatype rdf:langString;
+  shacl:name "primaire drager"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#primairedrager>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van primaire drager moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/157d9c95696736945e500b8445ad2f1b9b23e34d> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aactie";
+  shacl:name "actie"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#actie>;
+  shacl:uniqueLang true;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Slechts 1 waarde voor elke taal toegelaten voor actie"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/1890359a3ed68a9ce63c078d25d2345f10af8033> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aasbestsoort";
+  shacl:minCount 1;
+  shacl:name "asbestsoort"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestsoort>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor asbestsoort"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/1b39d4aa188ba55cef744e0bd12936f17df99a3d> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aeenvoudig%20bereikbaar";
+  shacl:name "eenvoudig bereikbaar"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#eenvoudigbereikbaar>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor eenvoudig bereikbaar is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aid";
+  shacl:name "id"@nl;
+  shacl:nodekind "sh:BlankNodeOrIRI";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor id is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/2217949528fdd3dba0d2e3fc7e6fb662caa193f5> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Abeschrijving";
+  shacl:name "beschrijving"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#beschrijving>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor beschrijving is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/22679101b389fabcd4bb080d82ccde7fd0df6309> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aactie";
+  shacl:minCount 1;
+  shacl:name "actie"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#actie>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor actie"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/2271db6bbf4214784a150cb533d31be54e3f2603> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aomgeving";
+  shacl:datatype rdf:langString;
+  shacl:name "omgeving"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#omgeving>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van omgeving moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/2e2b5662ed9dd624f78fdc45bc2238bcd71af713> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aasbestsoort";
+  shacl:name "asbestsoort"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestsoort>;
+  shacl:uniqueLang true;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Slechts 1 waarde voor elke taal toegelaten voor asbestsoort"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/326cac861989b7c233d5c9718c324dca55cb90ad> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aactie";
+  shacl:name "actie"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#actie>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor actie is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/3437503acc9fb35d70210cb5da7b331e7fb339b4> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aasbestmateriaal";
+  shacl:minCount 1;
+  shacl:name "asbestmateriaal"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor asbestmateriaal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/43063d4f97ea2eb32fb0fa6034a8a0897a914397> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aprimaire%20drager";
+  shacl:name "primaire drager"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#primairedrager>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor primaire drager is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/4a16176c26d8d5526c76974a1530f1ffdd596e93> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Abeschrijving";
+  shacl:maxCount 1;
+  shacl:name "beschrijving"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#beschrijving>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor beschrijving"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/4eb10daa860ffb64ba889c05f63d4902a9565cd9> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aprimaire%20drager";
+  shacl:minCount 1;
+  shacl:name "primaire drager"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#primairedrager>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor primaire drager"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/53cfa7051a61ca3da882f4fbe1fc89767a7d1e16> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aprimaire%20drager";
+  shacl:maxCount 1;
+  shacl:name "primaire drager"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#primairedrager>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor primaire drager"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/5426a4699ab5f6cdd944f76a50ce71a6609a35ee> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aasbestmateriaal";
+  shacl:name "asbestmateriaal"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor asbestmateriaal is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/5aaabc572ce4542a6ba5f6b601ea2dcdff1afdb8> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aasbestmateriaal";
+  shacl:maxCount 1;
+  shacl:name "asbestmateriaal"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor asbestmateriaal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/5c7f9de4c5eeba338abacba76ea764e63ebfb3ff> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Abindmiddel";
+  shacl:datatype rdf:langString;
+  shacl:name "bindmiddel"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#bindmiddel>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van bindmiddel moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/5ea3e6deebe239c60a44df6083bb214422fb8cca> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aid";
+  shacl:maxCount 1;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor id"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/7123d070360c899dd9b6eef264d29cc1b3e6685d> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aactie";
+  shacl:datatype rdf:langString;
+  shacl:name "actie"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#actie>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van actie moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/73f464ad9aed9d02ec67d14787e6fd7aad5a6fc9> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aeenvoudig%20bereikbaar";
+  shacl:maxCount 1;
+  shacl:name "eenvoudig bereikbaar"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#eenvoudigbereikbaar>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor eenvoudig bereikbaar"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/7466605c92be46c1d94c6aa240e33c4f011c9843> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aeenvoudig%20bereikbaar";
+  shacl:datatype xsd:boolean;
+  shacl:name "eenvoudig bereikbaar"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#eenvoudigbereikbaar>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van eenvoudig bereikbaar moet van het type <http://www.w3.org/2001/XMLSchema#boolean> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Abeschrijving";
+  shacl:minCount 1;
+  shacl:name "beschrijving"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#beschrijving>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor beschrijving"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/783e8325bf52daf77e928fbfb9b16e74ba44c01e> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aasbestsoort";
+  shacl:datatype rdf:langString;
+  shacl:name "asbestsoort"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestsoort>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van asbestsoort moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/78c67d4da1c4ced296f45ccfad3bf3266c0f8e12> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aomgeving";
+  shacl:name "omgeving"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#omgeving>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor omgeving is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/7a70b71d777d10297c1245a3fcad13f8d96cc3a7> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aprimaire%20drager";
+  shacl:name "primaire drager"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#primairedrager>;
+  shacl:uniqueLang true;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Slechts 1 waarde voor elke taal toegelaten voor primaire drager"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/7bc694106970f228bf0c767973165da759679751> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aasbestsoort";
+  shacl:maxCount 1;
+  shacl:name "asbestsoort"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestsoort>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor asbestsoort"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/7bdb302415d43ec1d186e50b3e0fa1bea4bbfeb7> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aasbestmateriaal";
+  shacl:datatype rdf:langString;
+  shacl:name "asbestmateriaal"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van asbestmateriaal moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/7c0e9ad0405a4be688016bd09ceb4f5ad26727ed> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aeenvoudig%20bereikbaar";
+  shacl:minCount 1;
+  shacl:name "eenvoudig bereikbaar"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#eenvoudigbereikbaar>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor eenvoudig bereikbaar"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/8261aad1be82f5b51fd856785d69dc71fd2b429c> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Abindmiddel";
+  shacl:maxCount 1;
+  shacl:name "bindmiddel"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#bindmiddel>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor bindmiddel"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/93e4966d49d10ea38e7526aeb36cf97742d12050> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aomgeving";
+  shacl:name "omgeving"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#omgeving>;
+  shacl:uniqueLang true;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Slechts 1 waarde voor elke taal toegelaten voor omgeving"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/943510c5994121edfbba7478ac9c91f5a0d88a2c> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Agebondenheid";
+  shacl:maxCount 1;
+  shacl:name "gebondenheid"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gebondenheid>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor gebondenheid"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/96e6092cca1b9e0acfa7a89f5e925534316dd186> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aomgeving";
+  shacl:maxCount 1;
+  shacl:name "omgeving"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#omgeving>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor omgeving"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/98c28b535c0667440bd5c3a2520ea4aafb6fabcd> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Abindmiddel";
+  shacl:minCount 1;
+  shacl:name "bindmiddel"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#bindmiddel>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor bindmiddel"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/a076e0631fdad9c1a638911b38fbf91881dbac30> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aomgeving";
+  shacl:minCount 1;
+  shacl:name "omgeving"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#omgeving>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor omgeving"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/acba7ef72d759e0bd69ac32f6bf6aac7a7da58f1> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Agebondenheid";
+  shacl:name "gebondenheid"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gebondenheid>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor gebondenheid is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/c6201b9f32d28a05b3f9ab46ab6232fbd464ee90> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Abindmiddel";
+  shacl:name "bindmiddel"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#bindmiddel>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor bindmiddel is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/d359a212f636aa02770ad6806f5de7db96dd9c88> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aasbestsoort";
+  shacl:name "asbestsoort"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestsoort>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor asbestsoort is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/da05d674f29a225a7115411e9f7ca442a25f2c88> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Abeschrijving";
+  shacl:name "beschrijving"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#beschrijving>;
+  shacl:uniqueLang true;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Slechts 1 waarde voor elke taal toegelaten voor beschrijving"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/de0d4bc996c7e1934e5eca40b874e2129cf376c2> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Abindmiddel";
+  shacl:name "bindmiddel"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#bindmiddel>;
+  shacl:uniqueLang true;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Slechts 1 waarde voor elke taal toegelaten voor bindmiddel"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aid";
+  shacl:minCount 1;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor id"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/e992cba92f1ede6f92709a17a0ad84ba94181f8c> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Aasbestmateriaal";
+  shacl:name "asbestmateriaal"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal>;
+  shacl:uniqueLang true;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Slechts 1 waarde voor elke taal toegelaten voor asbestmateriaal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/eecf340d501f2732e41064e9593291dcec708e96> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Agebondenheid";
+  shacl:datatype rdf:langString;
+  shacl:name "gebondenheid"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gebondenheid>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van gebondenheid moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#FicheShape/fc9c37fcd97d93806e985348b9c4d41f6b521037> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Fiche%3Agebondenheid";
+  shacl:name "gebondenheid"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gebondenheid>;
+  shacl:uniqueLang true;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Slechts 1 waarde voor elke taal toegelaten voor gebondenheid"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#GebouweenheidShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#GebouweenheidShape/0d913ac7222b4a9b73152f30451f727c90294f39>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#GebouweenheidShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#GebouweenheidShape/5ea3e6deebe239c60a44df6083bb214422fb8cca>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#GebouweenheidShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/gebouw#Gebouweenheid> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#GebouweenheidShape/0d913ac7222b4a9b73152f30451f727c90294f39> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Gebouweenheid%3Aid";
+  shacl:class rdfs:Resource;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van id moet van het type <http://www.w3.org/2000/01/rdf-schema#Resource> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#GebouweenheidShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Gebouweenheid%3Aid";
+  shacl:name "id"@nl;
+  shacl:nodekind "sh:BlankNodeOrIRI";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor id is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#GebouweenheidShape/5ea3e6deebe239c60a44df6083bb214422fb8cca> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Gebouweenheid%3Aid";
+  shacl:maxCount 1;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor id"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#GebouweenheidShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Gebouweenheid%3Aid";
+  shacl:minCount 1;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor id"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#InventarisSummaryShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#InventarisSummaryShape/0d913ac7222b4a9b73152f30451f727c90294f39>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#InventarisSummaryShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#InventarisSummaryShape/5ea3e6deebe239c60a44df6083bb214422fb8cca>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#InventarisSummaryShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635>;
+  shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#InventarisSummary> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#InventarisSummaryShape/0d913ac7222b4a9b73152f30451f727c90294f39> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#InventarisSummary%3Aid";
+  shacl:class rdfs:Resource;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van id moet van het type <http://www.w3.org/2000/01/rdf-schema#Resource> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#InventarisSummaryShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#InventarisSummary%3Aid";
+  shacl:name "id"@nl;
+  shacl:nodekind "sh:BlankNodeOrIRI";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor id is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#InventarisSummaryShape/5ea3e6deebe239c60a44df6083bb214422fb8cca> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#InventarisSummary%3Aid";
+  shacl:maxCount 1;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor id"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#InventarisSummaryShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#InventarisSummary%3Aid";
+  shacl:minCount 1;
+  shacl:name "id"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor id"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#TaalstringShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#TaalstringShape/5a374cb9619d3ecb46b60404687527dc1c06eae3>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#TaalstringShape/accd13839c2e0c6e60fc7183b6d3ba3059fa4dbd>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#TaalstringShape/bae0155f3c25a2084eaa6bd429caa9035302a5e0>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#TaalstringShape/f7af514e6c820346c4f1de53fde08fbe7875367a>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#TaalstringShape/59f19f33ed2d762d1b73623c8ef9129d6d178318>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#TaalstringShape/d3b05c273872f80179f9e1037431e9985fbe6dc3>;
+  shacl:targetClass rdf:langString .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#TaalstringShape/59f19f33ed2d762d1b73623c8ef9129d6d178318> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Taalstring%3Ataal";
+  shacl:description "een aanduiding van de gebruikte taal."@nl;
+  shacl:maxCount 1;
+  shacl:name "taal"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/generiek#taal>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor taal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#TaalstringShape/5a374cb9619d3ecb46b60404687527dc1c06eae3> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Taalstring%3Astring";
+  shacl:datatype xsd:string;
+  shacl:description "een tekst in de aangegeven taal"@nl;
+  shacl:name "string"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/generiek#string>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De range van string moet van het type <http://www.w3.org/2001/XMLSchema#string> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#TaalstringShape/accd13839c2e0c6e60fc7183b6d3ba3059fa4dbd> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Taalstring%3Astring";
+  shacl:description "een tekst in de aangegeven taal"@nl;
+  shacl:maxCount 1;
+  shacl:name "string"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/generiek#string>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Maximaal 1 waarden toegelaten voor string"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#TaalstringShape/bae0155f3c25a2084eaa6bd429caa9035302a5e0> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Taalstring%3Astring";
+  shacl:description "een tekst in de aangegeven taal"@nl;
+  shacl:name "string"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://data.vlaanderen.be/ns/generiek#string>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "De verwachte waarde voor string is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#TaalstringShape/d3b05c273872f80179f9e1037431e9985fbe6dc3> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Taalstring%3Ataal";
+  shacl:description "een aanduiding van de gebruikte taal."@nl;
+  shacl:minCount 1;
+  shacl:name "taal"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/generiek#taal>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor taal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#TaalstringShape/f7af514e6c820346c4f1de53fde08fbe7875367a> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#Taalstring%3Astring";
+  shacl:description "een tekst in de aangegeven taal"@nl;
+  shacl:minCount 1;
+  shacl:name "string"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/generiek#string>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22nl> "Minimaal 1 waarden verwacht voor string"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22#URiShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass rdfs:Resource .
